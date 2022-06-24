@@ -9,6 +9,7 @@ public class questao2classe
 	double limite;
 	String tipoConta;
 	int op;
+	int oop;
 	double valor;
 	
 	
@@ -29,7 +30,21 @@ public class questao2classe
 	{
 		saldo += valor;
 	}
+	
+	
+	boolean usarCheque(double valor)
+	{
+		if(saldo > valor)
+		{
+			return false;
+		}
+		else
+		{
+			saldo = saldo - limite;
+			return true;
+		}
 
+	}
 }
 	
 
