@@ -1,8 +1,6 @@
 String nome
 int numRelogio
 double pagamento
-date data
-double gastos
 int mes
 double media con
 double Mesmaior con
@@ -16,4 +14,7 @@ metodos dadosBasicos
 {
 }
 +++++++++++++++++++++++++++++++++++
+questao 5
+
+
 
