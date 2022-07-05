@@ -1,4 +1,4 @@
-package lista11;
+package lista_oop_3;
 
 import java.util.Iterator;
 import java.util.Scanner;
@@ -13,25 +13,26 @@ public class questao3main
 	
 		
 		System.out.println("Digite o nome do aluno :");
-		Aluno.nome = ent.next();
+		Aluno.setNome(ent.next());
 		
 		System.out.println("Digite o numero de matricula :");
-		Aluno.NumMatricula= ent.nextInt();
+		Aluno.setNumMatricula(ent.nextInt());
 		
 		System.out.println("Digite o curso :");
-		Aluno.curso= ent.next();
+		Aluno.setCurso(ent.next());
 		
 		
-		for (int i = 0; i < Aluno.loop; i++) 
+		for (int i = 0; i < Aluno.getLoop(); i++) 
 		{
 			System.out.println("Digite o nome da "+(i+1)+" materia : ");
-			Aluno.materia[i] = ent.next();
+			Aluno.setMateria(i, ent.next());
 			
-			for (int j = 0; j < Aluno.loop; j++) 
+			for (int j = 0; j < Aluno.getLoop(); j++) 
 			{
 				System.out.println("Digite a "+ (j+1) +"° Nota : ");
-				Aluno.notas[i][j] = ent.nextDouble();
+				Aluno.setNotas(i, j, ent.nextDouble());
 			}
+			
 		}
 		Aluno.mostrarResul();
 		

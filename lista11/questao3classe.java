@@ -1,16 +1,16 @@
-package lista11;
+package lista_oop_3;
 
-public class questao3classe 
+public class questao3classe
 {
-	int NumMatricula;
-	String nome;
-	String curso;
-	int loop = 3;
-	String materia[] = new String[loop];
-	double notas[][] = new double[loop][loop];
+	private int NumMatricula;
+	private String nome;
+	private String curso;
+	private int loop = 3;
+	private String materia[] = new String[loop];
+	private double notas[][] = new double[loop][loop];
 	int soma;
 	
-	double media;
+	private double media;
 	
 	
 	
@@ -65,8 +65,8 @@ public class questao3classe
 		return nome;
 	}
 
-	public void setNome(String nome) {
-		
+	public void setNome(String nome) 
+	{
 		this.nome = nome;
 	}
 
@@ -90,26 +90,26 @@ public class questao3classe
 		this.loop = loop;
 	}
 
-	public String[] getMateria() 
+	public String getMateria(int i) 
 	{
-		return materia;
+		return this.materia[i];
 	}
 
-	public void setMateria(String[] materia) 
+	public void setMateria(int i, String materia) 
 	{
-		this.materia = materia;
+		this.materia[i] = materia;
 	}
 
-	public double[][] getNotas() 
+	public void getNotas(int i, int j, double notas) 
 	{
-		return notas;
+		this.notas[i][j] = notas;
 	}
 
-	public void setNotas(double[][] notas) 
+	public void setNotas(int i, int j, double notas) 
 	{
-		this.notas = notas;
+		this.notas[i][j] = notas;
 	}
-
+	
 	public int getSoma() 
 	{
 		return soma;
@@ -125,8 +125,11 @@ public class questao3classe
 		return media;
 	}
 
-	public void setMedia(double media) {
+	public void setMedia(double media)
+	{
 		this.media = media;
 	}
+
+ 
 
 }
