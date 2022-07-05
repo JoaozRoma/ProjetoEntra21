@@ -1,7 +1,9 @@
-package lista11;
+package lista_oop_3;
 
 public class questao6classe 
 {
+	private int linha;
+	private int coluna;
 	int num = 3;
 	int jogo[][] = new int [num][num];
 	
@@ -103,6 +105,36 @@ public class questao6classe
 		
 	}
 
-}
+	public int getLinha() {
+		return linha;
+	}
 
-	
+	public void setLinha(int linha) {
+		this.linha = linha;
+	}
+
+	public int getColuna() {
+		return coluna;
+	}
+
+	public void setColuna(int coluna) {
+		this.coluna = coluna;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public int[][] getJogo() {
+		return jogo;
+	}
+
+	public void setJogo(int[][] jogo) {
+		this.jogo = jogo;
+	}
+
+}

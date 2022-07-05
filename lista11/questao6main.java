@@ -1,4 +1,4 @@
-package lista11;
+package lista_oop_3;
 
 import java.util.Scanner;
 
@@ -9,8 +9,6 @@ public class questao6main
 		
 		questao6classe velha = new questao6classe();
 		Scanner ent = new Scanner(System.in);
-		int linha;
-		int coluna;
 		int jogador = 1;
 		int vencedor = velha.verVencedor();
 		
@@ -20,12 +18,12 @@ public class questao6main
 		{
 			System.out.println("Jogador "+jogador);
 			System.out.println("Linha :");
-			linha = ent.nextInt();
+			velha.setLinha(ent.nextInt());
 			
 			System.out.println("coluna :");
-			coluna = ent.nextInt();
+			velha.setColuna(ent.nextInt());
 			
-			if(!velha.jogada(jogador,linha - 1 , coluna - 1))
+			if(!velha.jogada(jogador, velha.getLinha() - 1 , velha.getColuna() - 1))
 			{
 				System.out.println("Jogada Invalida !");
 			}
