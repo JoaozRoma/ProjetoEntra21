@@ -50,4 +50,83 @@ public class questao3classe
 		mediaNotas();                  
 	}
 
+	public int getNumMatricula() 
+	{
+		return NumMatricula;
+	}
+
+	public void setNumMatricula(int numMatricula) 
+	{
+		NumMatricula = numMatricula;
+	}
+
+	public String getNome() 
+	{
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		
+		this.nome = nome;
+	}
+
+	public String getCurso() 
+	{
+		return curso;
+	}
+
+	public void setCurso(String curso) 
+	{
+		this.curso = curso;
+	}
+
+	public int getLoop() 
+	{
+		return loop;
+	}
+
+	public void setLoop(int loop) 
+	{
+		this.loop = loop;
+	}
+
+	public String[] getMateria() 
+	{
+		return materia;
+	}
+
+	public void setMateria(String[] materia) 
+	{
+		this.materia = materia;
+	}
+
+	public double[][] getNotas() 
+	{
+		return notas;
+	}
+
+	public void setNotas(double[][] notas) 
+	{
+		this.notas = notas;
+	}
+
+	public int getSoma() 
+	{
+		return soma;
+	}
+
+	public void setSoma(int soma) 
+	{
+		this.soma = soma;
+	}
+
+	public double getMedia() 
+	{
+		return media;
+	}
+
+	public void setMedia(double media) {
+		this.media = media;
+	}
+
 }
