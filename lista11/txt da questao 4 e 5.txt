@@ -1,0 +1,118 @@
+String nome
+int numRelogio
+double pagamento
+date data
+double gastos
+int mes
+double media con
+double Mesmaior con
+double Mesmenor con
+
+metodo consumoRelogio
+{
+//verifica o maior e menor do mes
+}
+
+metodos dadosBasicos
+{
+// print e input de dados 
+}
++++++++++++++++++++++++++++++++++++
+questao 5
+int CadProfessor, CadTecnico, CadFuncionario
+String Disciplina[]
+String Aula[][]
+int CodAlunos
+
+String Nome;
+String endereço;
+int telefone;
+int cpf;
+int numCTPS
+double salario;
+
+boolean titular;
+double tempoCurso;
+
+
+metodo cadastrar
+{
+//faz o cadastro de prof, tec e func
+}
+
+metodo verTitular
+{
+//boolean  verifica se é titular ou nao
+}
+
+metodo atribuirProfMateriaAluno
+{
+//dentro da matriz aula atribui o nome do professor e seus alunos com o vetor discplina;
+}
+============================================================================================
+questao 5 new
+
+classes
+{
+disciplina
+professor 
+curso 
+aluno
+funcionario
+tecnicoADM
+}
+
+atributos func
+{
+String Nome;
+String endereço;
+int telefone;
+int cpf;
+int numCTPS
+double salario;
+}
+
+atributos prof
+{
+String Nome;
+String endereço;
+int telefone;
+int cpf;
+int numCTPS
+double salario;
+String titulação;
+String areadePesquisa;
+}
+
+atributos tecn
+{
+String Nome;
+String endereço;
+int telefone;
+int cpf;
+int numCTPS
+double salario;
+String cargo;
+String departamento;
+}
+atributos curso
+{
+String Nome;
+num codigo;
+duração;
+}
+
+atributos discplina
+{
+String Nome;
+num codigo;
+cargaHRS;
+}
+
+atributos aluno
+{
+String Nome;
+num matricula;
+String curso;
+num cpf;
+}
