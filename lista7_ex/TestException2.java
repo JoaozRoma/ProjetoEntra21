@@ -10,7 +10,6 @@ public class TestException2
 	{
 		int x = 0;
 		int y = 0;
-		int NEWx = 0;
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Eu sei dividir");
 		try
@@ -27,10 +26,11 @@ public class TestException2
 		}
 		catch (InputMismatchException e) 
 		{
-			System.out.println("Informe um NUMERO O CORRETO :");
-			NEWx = teclado.nextInt();
-			NEWx = x;
-			
+			System.out.println("Informe um NUMERO O CORRETO :"+e);
+		}
+		catch (ArithmeticException e)
+		{
+			System.out.println("divisao por 0 erro"+e);
 		}
 	}
 
